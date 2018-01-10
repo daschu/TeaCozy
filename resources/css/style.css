@@ -3,13 +3,29 @@ body {
   background-color: black;
   font-family: Helvetica, sans-serif;
   font-size: 22px;
+  font-weight: normal
   color: seashell;
   text-align: center;
   opacity: 0.9;
 }
+
+h2, h3, h4, h5, p {
+  font-weight: normal;
+  color: seashell;
+}
 h2{
   font-size: 24px;
 }
+h3{
+  font-size: 20px;
+}
+h4{
+  font-size: 18px;
+}
+h5{
+  font-size: 12px;
+}
+
 a {
   color: seashell;
 }
@@ -20,7 +36,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 98%;
+  width: 99%;
   height: 69px;
   z-index: 1;
   background-color: black;
@@ -46,12 +62,11 @@ header a:hover {
 .main {
   margin: 0 auto;
   padding-top: 75px;
-  width: 1000px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 /* mission row */
@@ -65,10 +80,14 @@ header a:hover {
 }
 .mission-headlines {
   background-color: black;
-  width: 1000px;
+  width: 100%;
 }
 
 /* featured row */
+#featured-box {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
 .featured-img-box {
   display: flex;
   flex-flow: row wrap;
@@ -85,11 +104,48 @@ header a:hover {
   height: 200px;
   padding-bottom: 10px;
 }
+.single-img p, .loc p {
+  font-size: 18px;
+}
+
+/* locations row */
+#locations-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: 500px;
+  background-image: url("../images/img-locations-background.jpg");
+  padding-bottom: 70px;
+}
+.loc-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.loc {
+  padding: 10px;
+  background-color: black;
+  opacity: 0.9;
+  width: 268px;
+  height: 230px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* footer */
+
+/* copyright */
+.copyright p {
+  font-size: 11px;
+  font-weight: normal;
+  text-align: left;
+  margin-left: 20px;
+}
 
 
-
-
-/* will be deleted later */
+/* will be deleted later
 div, header, nav, footer {
   border: 1px solid red;
-}
+} */
